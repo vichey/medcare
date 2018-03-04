@@ -117,6 +117,9 @@ footer {
   padding: 50px 40px 40px 40px;
   color: #fff;
 }
+.image-doctor {
+  border-radius: 50%;
+}
 .card-title {
   color: #333333;
   font-size: 17px;

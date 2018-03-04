@@ -1,5 +1,54 @@
 @extends('layouts.front')
 @section('content')
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+		<?php $i = 1;
+            $slides = DB::table('slides')->orderBy('order', 'asc')->where('active',1)->get();
+        ?>
+        <div class="carousel-inner">
+            @foreach($slides as $s)
+                @if($i == 1)
+                    <div class="carousel-item active">
+                        <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
+                    </div>
+                @else
+                    <div class="carousel-item">
+                        <img src="{{asset('front/slides/'.$s->photo)}}"   alt="{{$s->name}}"  width="100%">
+                    </div>
+                @endif
+                <?php $i++; ?>
+            @endforeach
+	    </div>
+	    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+	<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-4 background-w">	
+                <div class="float-right ic"><img src="{{asset('front/img/u.png')}}" width="55"  style="opacity: 0.4;"></div>
+                <?php $who_we_are = DB::table('pages')->where('id',1)->first();?>
+                <h5>{{$who_we_are->title}}</h5>
+                <p>{!!$who_we_are->description!!}</p>
+            </div>
+			<div class="col-md-4 background-c">
+                <div class="float-right ic" ><img src="{{asset('front/img/w.png')}}" width="55" style="opacity: 0.5 ;"></div>
+                <?php $comfortable_environment = DB::table('pages')->where('id',2)->first();?>
+                <h5>{{$comfortable_environment->title}}</h5>
+                <p>{!!$comfortable_environment->description!!}</p>
+			</div>
+			<div class="col-md-4 background-o">
+			    <div class="float-right ic"><img src="{{asset('front/img/h.png')}}" width="55" style="opacity: 0.6;"></div>
+			    <?php $opening_hours = DB::table('pages')->where('id',3)->first();?>
+				<h5>{{$opening_hours->title}}</h5>
+				<p>{!!$opening_hours->description!!}</p>
+			</div>
+		</div>
+	</div>
+    <div class="container">
     <?php $staffs = DB::table('staffs')->orderBy('order', 'asc')->where('active', 1)->get(); ?>
     <p><br></p>
         <h3 align='center' class="text-info">
@@ -13,9 +62,9 @@
             <div class=" h-100 text-center">
                 <a href="{{url('page/staff/detail/'.$s->id)}}">
                     @if($s->photo != null)
-                        <img src="{{asset('front/img/'.$s->photo)}}" alt="" height="120">
+                        <img src="{{asset('front/img/'.$s->photo)}}" alt="" height="120" class="image-doctor"
                     @else 
-                        <img src="{{asset('front/img/default.png')}}" alt="" height="120">
+                        <img src="{{asset('front/img/default.png')}}" alt="" height="120" class="image-doctor">
                     @endif
                 </a>
                 <p></p>
@@ -78,4 +127,5 @@
         </div>
         @endforeach
     </div>
+</div>
 @endsection
