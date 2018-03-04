@@ -18,6 +18,7 @@
                                 <th>photo</th>
                                 <th>name</th>
                                 <th>position</th>
+                                <th>order</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -34,6 +35,7 @@
                                     </td>
                                     <td>{{$s->name}}</td>
                                     <td>{{$s->position}}</td>
+                                    <td>{{$s->order}}</td>
                                     <td>
                                         <a href="{{url('/staff/view/'.$s->id)}}" title="view"><i class="fa fa-eye text-info"></i></a>&nbsp;&nbsp;
                                         <a href="{{url('/staff/edit/'.$s->id)}}" title="Edit"><i class="fa fa-edit text-success"></i></a>&nbsp;&nbsp;

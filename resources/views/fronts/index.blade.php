@@ -1,5 +1,35 @@
 @extends('layouts.front')
 @section('content')
+    <?php $staffs = DB::table('staffs')->orderBy('order', 'asc')->where('active', 1)->get(); ?>
+    <p><br></p>
+        <h3 align='center' class="text-info">
+            <b>Our Doctors</b>  
+        </h3>
+        <hr class="hr-d"> 
+    <p><br></p>
+    <div class="row">
+        @foreach($staffs as $s)
+        <div class="col-md-3">
+            <div class=" h-100 text-center">
+                <a href="{{url('page/staff/detail/'.$s->id)}}">
+                    @if($s->photo != null)
+                        <img src="{{asset('front/img/'.$s->photo)}}" alt="" height="120">
+                    @else 
+                        <img src="{{asset('front/img/default.png')}}" alt="" height="120">
+                    @endif
+                </a>
+                <p></p>
+                <a href="{{url('page/staff/detail/'.$s->id)}}" class="staff-name" style="text-decoration:none;">
+                    <aside class="card-title">
+                        <b>{{$s->name}}</b>
+                    </aside>
+                    <aside class="card-text-c">{{$s->position}}</aside>
+                </a>
+            </div>
+            <p><br></p>
+        </div>
+        @endforeach   
+    </div>
     <?php 
         $video_trainings = DB::table('video_trainings')
             ->where('active',1)

@@ -38,6 +38,7 @@ class StaffController extends Controller
             'name' => $r->name,
             'position' => $r->position,
             'description' => $r->description,
+            'order' => $r->order,
         );
         if($r->photo) {
             $file = $r->file('photo');
@@ -89,6 +90,7 @@ class StaffController extends Controller
             'name' => $r->name,
             'position' => $r->position,
             'description' => $r->description,
+            'order' => $r->order,
         );
         if($r->photo) {
             $file = $r->file('photo');

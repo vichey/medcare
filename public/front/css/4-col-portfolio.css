@@ -90,8 +90,24 @@ footer {
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: #6f51c7;
 }
+.card-text-c {
+  color: #666;
+  font-weight: 600;
+}
 .background-c {
   background: #6f51c7;
+}
+.ic {
+  margin-top: -34px;
+  margin-right: -20px;
+}
+.hr-d {
+  border-bottom: 3px solid #34b8c0;
+  width: 250px;
+}
+.hr-c {
+  border-bottom: 3px solid #6f51c7;
+  width: 250px;
 }
 .background-o {
   background: #A82FFC;
@@ -101,11 +117,12 @@ footer {
   padding: 50px 40px 40px 40px;
   color: #fff;
 }
+.card-title {
+  color: #333333;
+  font-size: 17px;
+}
 .pd-0 {
   padding: 0;
-}
-audio {
-  width: 250px;
 }
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.04)!important;

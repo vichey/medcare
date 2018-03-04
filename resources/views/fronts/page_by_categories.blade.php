@@ -1,9 +1,9 @@
 @extends('layouts.front')
 @section('content')
-<h5 class="default-color my-4">
+<h3 class="default-color text-center my-4">
     <b>News and Education</b>
-    <hr>
-</h5>
+    <hr class="hr-c">
+</h3>
 <div class="page-by-cat back">
     <div class="row">
         @foreach($posts as $p)

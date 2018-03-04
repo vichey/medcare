@@ -46,12 +46,14 @@
     </div>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-center">
-                <li class="nav-item active">
+            <center>
+            <ul class="navbar-nav">
+                <li class="nav-item">
                     <a class="nav-link" href="{{url('/')}}">Home</a>
                 </li>
                 <li class="nav-item">
@@ -80,6 +82,8 @@
                     </div>
                 </li>
             </ul>
+            </center>
+            </div>
 	    </nav> 
     </div>
 	
@@ -108,23 +112,22 @@
             <span class="carousel-control-next-icon"></span>
 		</a>
 	</div>
-
 	<div class="col-md-12">
 		<div class="row">
 			<div class="col-md-4 background-w">	
-                <div class="float-right"><img src="{{asset('front/img/u.png')}}" width="48"  style="opacity: 0.6;"></div>
+                <div class="float-right ic"><img src="{{asset('front/img/u.png')}}" width="55"  style="opacity: 0.4;"></div>
                 <?php $who_we_are = DB::table('pages')->where('id',1)->first();?>
                 <h5>{{$who_we_are->title}}</h5>
                 <p>{!!$who_we_are->description!!}</p>
             </div>
 			<div class="col-md-4 background-c">
-                <div class="float-right"><img src="{{asset('front/img/w.png')}}" width="50" style="opacity: 0.6;"></div>
+                <div class="float-right ic" ><img src="{{asset('front/img/w.png')}}" width="55" style="opacity: 0.5 ;"></div>
                 <?php $comfortable_environment = DB::table('pages')->where('id',2)->first();?>
                 <h5>{{$comfortable_environment->title}}</h5>
                 <p>{!!$comfortable_environment->description!!}</p>
 			</div>
 			<div class="col-md-4 background-o">
-			    <div class="float-right"><img src="{{asset('front/img/h.png')}}"  style="opacity: 0.6;"></div>
+			    <div class="float-right ic"><img src="{{asset('front/img/h.png')}}" width="55" style="opacity: 0.6;"></div>
 			    <?php $opening_hours = DB::table('pages')->where('id',3)->first();?>
 				<h5>{{$opening_hours->title}}</h5>
 				<p>{!!$opening_hours->description!!}</p>

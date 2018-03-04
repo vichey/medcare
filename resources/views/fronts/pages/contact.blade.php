@@ -1,9 +1,9 @@
 @extends('layouts.front')
 @section('content')   
-<h5 class="default-color my-4">
-<b>{{$contact->title}}</b>
-<hr>
-</h5>
+<h3 class="default-color text-center my-4">
+    <b>{{$contact->title}}</b>
+    <hr class="hr-c">
+</h3>
 <div class="page-by-cat back">
     <div class="row">
         <div class="col-md-12">

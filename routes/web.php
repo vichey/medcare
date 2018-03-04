@@ -76,14 +76,6 @@ Route::post('/role/update', "RoleController@update");
 Route::get('/role/permission/{id}', "PermissionController@index");
 Route::post('/rolepermission/save', "PermissionController@save");
 
-// catogory
-Route::get('/category', "CategoryController@index");
-Route::get('/category/create', "CategoryController@create");
-Route::get('/category/edit/{id}', "CategoryController@edit");
-Route::get('/category/delete/{id}', "CategoryController@delete");
-Route::post('/category/save', "CategoryController@save");
-Route::post('/category/update', "CategoryController@update");
-
 // Page
 Route::get('/page', "PageController@index");
 Route::get('/page/create', "PageController@create");
@@ -97,6 +89,7 @@ Route::get('/page/view/{id}', "PageController@view");
 Route::get('/page/about', "FrontPageController@about");
 Route::get('/page/contact', "FrontPageController@contact");
 Route::get('/page/staff', "FrontPageController@staff");
+Route::get('page/staff/detail/{id}', "FrontPageController@staff_detail");
 // test
 Route::get('/test', "TestController@index");
 
@@ -108,6 +101,7 @@ Route::get('/staff/delete/{id}', "StaffController@delete");
 Route::get('/staff/edit/{id}', "StaffController@edit");
 Route::post('/staff/update', "StaffController@update");
 Route::get('/staff/view/{id}', "StaffController@view");
+
 // Post
 Route::get('/post', "PostController@index");
 Route::get('/post/create', "PostController@create");
