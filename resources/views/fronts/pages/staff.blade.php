@@ -13,9 +13,9 @@
             <div class=" h-100 text-center">
                 <a href="{{url('page/staff/detail/'.$s->id)}}">
                     @if($s->photo != null)
-                        <img src="{{asset('front/img/'.$s->photo)}}" alt="" height="120" class="image-doctor">
+                        <img src="{{asset('front/img/'.$s->photo)}}" alt=""  class="image-doctor">
                     @else 
-                        <img src="{{asset('front/img/default.png')}}" alt="" height="120" class="image-doctor">
+                        <img src="{{asset('front/img/default.png')}}" alt="" class="image-doctor">
                     @endif
                 </a>
                 <p></p>

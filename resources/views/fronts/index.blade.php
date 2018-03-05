@@ -49,6 +49,30 @@
 		</div>
 	</div>
     <div class="container">
+    <p><br></p>
+    <h3 align='center' class="text-warning">
+        <b>All Service</b>  
+    </h3>
+    <hr class="hr-s"> 
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <a class="btn btn-s btn-danger btn-block" href="{{url('page/6')}}">
+                សេវាទូទៅ
+            </a>
+        </div>
+        <div class="col-md-4 text-center">
+            <a class="btn btn-s btn-warning text-white btn-block" href="{{url('page/8')}}">
+               សេវាពិនិត្យជំងឺ
+            </a>
+        </div>
+        <div class="col-md-4 text-center">
+            <a class="btn btn-s btn-success btn-block" href="{{url('page/7')}}">
+               សេវាពិនិត្យសុខភាព
+            </a>
+        </div>
+    </div>
+    <hr class="hr-s"> 
+
     <?php $staffs = DB::table('staffs')->orderBy('order', 'asc')->where('active', 1)->get(); ?>
     <p><br></p>
         <h3 align='center' class="text-info">

@@ -118,11 +118,29 @@ footer {
   color: #fff;
 }
 .image-doctor {
+  width: 115px;
+  height: 120px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 10px;
+  display: table;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 .card-title {
   color: #333333;
   font-size: 17px;
+}
+.btn-s {
+  padding: 25px;
+}
+.hr-s {
+  border-bottom: 1px solid #ffc107;
 }
 .pd-0 {
   padding: 0;
