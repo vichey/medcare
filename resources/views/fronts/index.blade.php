@@ -61,12 +61,12 @@
             </a>
         </div>
         <div class="col-md-4 text-center">
-            <a class="btn btn-s btn-warning text-white btn-block" href="{{url('page/8')}}">
+            <a class="btn btn-s btn-warning text-white btn-block" href="{{url('page/7')}}">
                សេវាពិនិត្យជំងឺ
             </a>
         </div>
         <div class="col-md-4 text-center">
-            <a class="btn btn-s btn-success btn-block" href="{{url('page/7')}}">
+            <a class="btn btn-s btn-success btn-block" href="{{url('page/8')}}">
                សេវាពិនិត្យសុខភាព
             </a>
         </div>
