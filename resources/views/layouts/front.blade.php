@@ -76,9 +76,9 @@
                         All Service
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+                        <a class="dropdown-item" href="{{url('/page/6')}}">សេវាទូទៅ</a>
+                        <a class="dropdown-item" href="{{url('/page/7')}}">សេវាពិនិត្យជំងឺ</a>
+                        <a class="dropdown-item" href="{{url('/page/8')}}">សេវាពិនិត្យសុខភាព</a>
                     </div>
                 </li>
             </ul>

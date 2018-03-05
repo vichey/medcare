@@ -89,6 +89,7 @@ Route::get('/page/view/{id}', "PageController@view");
 Route::get('/page/about', "FrontPageController@about");
 Route::get('/page/contact', "FrontPageController@contact");
 Route::get('/page/staff', "FrontPageController@staff");
+Route::get('/page/{id}', "FrontPageController@page");
 Route::get('page/staff/detail/{id}', "FrontPageController@staff_detail");
 // test
 Route::get('/test', "TestController@index");
