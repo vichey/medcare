@@ -134,22 +134,25 @@
     ?>
     <div class="row">
         <div class="col-md-12 my-4">
-            <h5 class="default-color">Latest Audio  <a href="#" class="float-right">View All Audio >></a></h5>
+            <h5 class="default-color">Latest Audio </h5>
             <hr>
         </div>
     </div>
     <div class="row">
-        @foreach($audios as $aud)
-        <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="h-100">
-          ​      {{$aud->title}}
-                <audio controls="">
-                    <source src="{{asset('front/audios/'.$aud->file)}}" type="audio/ogg" width="80%">
-                    <source src="{{asset('front/audios/'.$aud->file)}}" type="audio/mpeg" width="80%">
-                </audio>
+        <div class="col-sm-12">
+            <div class="audo-box">
+                @foreach($audios as $aud)
+                    <p class="audo-item">
+                        <h6>{{$aud->title}}</h6>
+                        <audio controls="">
+                            <source src="{{asset('front/audios/'.$aud->file)}}" type="audio/ogg">
+                            <source src="{{asset('front/audios/'.$aud->file)}}" type="audio/mpeg">
+                        </audio>
+                    </p>
+                    <hr>
+                @endforeach
             </div>
         </div>
-        @endforeach
     </div>
 </div>
 @endsection
