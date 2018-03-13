@@ -28,8 +28,8 @@
                                     </td>
                                     <td>{{$vid->order_number}}</td>
                                     <td>
-                                        <a href="{{url('/video-training/edit/'.$vid->id)}}" title="Edit"><i class="fa fa-edit text-success"></i></a>&nbsp;&nbsp;
-                                        <a href="{{url('/video-training/delete/'.$vid->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-remove text-danger"></i></a>
+                                        <a class="btn btn-xs btn-primary" href="{{url('/video-training/edit/'.$vid->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-xs btn-danger" href="{{url('/video-training/delete/'.$vid->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

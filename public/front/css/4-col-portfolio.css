@@ -132,6 +132,21 @@ footer {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.btn-c {
+  background: #34b8c0;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 10px;
+}
 .card-title {
   color: #333333;
   font-size: 17px;

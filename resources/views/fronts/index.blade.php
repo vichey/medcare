@@ -10,10 +10,18 @@
                 @if($i == 1)
                     <div class="carousel-item active">
                         <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
+                        <div class="carousel-caption">
+                            <aside><b>{{$s->name}}</b></aside>
+                            <aside><a href="{{$s->url}}"><button class="btn btn-primary btn-c"><b>READ MORE</b></button></a></aside>
+                        </div>  
                     </div>
                 @else
                     <div class="carousel-item">
                         <img src="{{asset('front/slides/'.$s->photo)}}"   alt="{{$s->name}}"  width="100%">
+                        <div class="carousel-caption">
+                            <aside><b>{{$s->name}}</b></aside>
+                            <aside><a href="{{$s->url}}"><button class="btn btn-primary btn-c"><b>READ MORE</b></button></a></aside>
+                        </div>                        
                     </div>
                 @endif
                 <?php $i++; ?>

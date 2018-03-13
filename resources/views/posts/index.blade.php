@@ -9,8 +9,8 @@
                         New
                     </a>
                 </div>
-                <div class="card-block" style="padding: 0;">
-                    <table class="table table-striped table-condensed">
+                <div class="card-block">
+                    <table class="tbl">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -29,9 +29,8 @@
                                     <td>{{$p->create_by}}</td>
                                     <td>{{$p->create_at}}</td>
                                     <td>
-                                        <a href="{{url('/post/edit/'.$p->id)}}" title="Edit">Edit</a> | 
-                                        
-                                       <a href="{{url('/post/delete/'.$p->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete">Delete</a>
+                                        <a class="btn btn-xs btn-primary" href="{{url('/post/edit/'.$p->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-xs btn-danger" href="{{url('/post/delete/'.$p->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

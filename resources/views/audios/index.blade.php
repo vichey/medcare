@@ -34,8 +34,8 @@
                                     <td>{{$sli->title}}</td>
                                     <td>{{$sli->order}}</td>
                                     <td>
-                                        <a class="btn btn-xs btn-primary"  href="{{url('/audio/edit/'.$sli->id)}}" title="Edit">Edit</a>
-                                        <a class="btn btn-xs btn-danger"  href="{{url('/audio/delete/'.$sli->id)}}" title="Delete">Delete</a>
+                                        <a class="btn btn-xs btn-primary"  href="{{url('/audio/edit/'.$sli->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-xs btn-danger"  href="{{url('/audio/delete/'.$sli->id)}}" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

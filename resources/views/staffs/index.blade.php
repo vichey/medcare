@@ -37,9 +37,9 @@
                                     <td>{{$s->position}}</td>
                                     <td>{{$s->order}}</td>
                                     <td>
-                                        <a href="{{url('/staff/view/'.$s->id)}}" title="view"><i class="fa fa-eye text-info"></i></a>&nbsp;&nbsp;
-                                        <a href="{{url('/staff/edit/'.$s->id)}}" title="Edit"><i class="fa fa-edit text-success"></i></a>&nbsp;&nbsp;
-                                       <a href="{{url('/staff/delete/'.$s->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-remove text-danger"></i></a>
+                                        <a class="btn btn-xs btn-info" href="{{url('/staff/view/'.$s->id)}}" title="Detail"><i class="fa fa-eye"></i></a>
+                                        <a class="btn btn-xs btn-primary" href="{{url('/staff/edit/'.$s->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-xs btn-danger" href="{{url('/staff/delete/'.$s->id)}}" onclick="return confirm('Do you want to delete?')" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

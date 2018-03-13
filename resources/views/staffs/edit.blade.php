@@ -38,7 +38,7 @@
                         {{csrf_field()}}
                         <input type="hidden" value="{{$staff->id}}" name="id" id="id">
                         <div class="form-group row">
-                            <label for="name" class="control-label col-lg-1 col-sm-2">
+                            <label for="name" class="control-label col-lg-2 col-sm-2">
                             	Name <span class="text-danger">*</span>
                             </label>
                             <div class="col-lg-6 col-sm-8">
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="position" class="control-label col-lg-1 col-sm-2">
+                            <label for="position" class="control-label col-lg-2 col-sm-2">
                             	Position <span class="text-danger">*</span>
                             </label>
                             <div class="col-lg-6 col-sm-8">
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="order" class="control-label col-lg-1 col-sm-2">
+                            <label for="order" class="control-label col-lg-2 col-sm-2">
                             	Order
                             </label>
                             <div class="col-lg-6 col-sm-8">
@@ -62,13 +62,13 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="photo" class="control-label col-lg-1 col-sm-2">Photo</label>
+                            <label for="photo" class="control-label col-lg-2 col-sm-2">Photo <span class="text-danger">(115 x 120)</span></label>
                             <div class="col-lg-6 col-sm-8">
                                 <input type="file" name="photo" id="photo" accept="image/*" onchange="loadFile(event)">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="photo" class="control-label col-lg-1 col-sm-2"> </label>
+                            <label for="photo" class="control-label col-lg-2 col-sm-2"> </label>
                             <div class="col-lg-6 col-sm-8">
                                 @if($staff->photo != null)
                                 <img src="{{asset('front/img/'.$staff->photo)}}" id="img" width="150"/>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="description" class="control-label col-lg-1 col-sm-2">
+                            <label for="description" class="control-label col-lg-2 col-sm-2">
                                 Description
                             </label>
                             <div class="col-lg-11 col-sm-10">

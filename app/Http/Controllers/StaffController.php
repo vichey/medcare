@@ -22,6 +22,7 @@ class StaffController extends Controller
     public function index()
     {
         $data['staffs'] = DB::table('staffs')
+            ->orderBy('id', 'desc')
             ->where('active', 1)
             ->paginate(18);
         return view('staffs.index', $data);

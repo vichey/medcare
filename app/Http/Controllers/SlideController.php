@@ -48,6 +48,7 @@ class SlideController extends Controller
         $data = array(
             'name' => $r->name,
             'order' => $r->order,
+            'url' => $r->url,
             'photo' => $file_name,
         );
         $sms = "The new branch has been created successfully.";
@@ -85,6 +86,7 @@ class SlideController extends Controller
     {
         $data = array(
             'name' => $r->name,
+            'url' => $r->url,
             'order' => $r->order
         );
         if ($r->photo) {
@@ -92,9 +94,7 @@ class SlideController extends Controller
             $file_name = $file->getClientOriginalName();
             $destinationPath = 'front/slides';
             $file->move($destinationPath, $file_name);
-            $data = array(
-	            'photo' => $file_name,
-            );
+            $data['photo'] =  $file_name;
         }
         $sms = "All changes have been saved successfully.";
         $sms1 = "Fail to to save changes, please check again!";

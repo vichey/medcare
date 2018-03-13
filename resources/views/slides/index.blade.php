@@ -16,6 +16,7 @@
                                 <th>&numero;</th>
                                 <th>Image</th>
                                 <th>Name</th>
+                                <th>URL</th>
                                 <th>Order</th>
                                 <th>Action</th>
                             </tr>
@@ -26,11 +27,12 @@
                                 <tr>
                                     <td>{{$i++}}</td>
                                     <td><img src="{{URL::asset('front/slides/').'/'.$sli->photo}}" width="100"/></td>
+                                    <td>{{$sli->url}}</td>
                                     <td>{{$sli->name}}</td>
                                     <td>{{$sli->order}}</td>
                                     <td>
-                                        <a class="btn btn-xs btn-primary"  href="{{url('/slide/edit/'.$sli->id)}}" title="Edit">Edit</a>
-                                        <a class="btn btn-xs btn-danger"  href="{{url('/slide/delete/'.$sli->id)}}" title="Delete">Delete</a>
+                                        <a class="btn btn-xs btn-primary"  href="{{url('/slide/edit/'.$sli->id)}}" title="Edit"><i class="fa fa-pencil"></i></a>
+                                        <a class="btn btn-xs btn-danger"  href="{{url('/slide/delete/'.$sli->id)}}" title="Delete"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
