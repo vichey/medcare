@@ -161,7 +161,7 @@ footer {
   padding: 0;
 }
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.04)!important;
+  background-color: rgba(0, 0, 0, 0.08)!important;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
@@ -169,7 +169,8 @@ footer {
   color: #6f51c7;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(52, 184, 192, 0.9);
+  color:rgba(37, 124, 130, 0.9);
+  font-size: 15px;
 }
 .dropdown-menu {
   padding: 0;
@@ -185,7 +186,8 @@ footer {
   background-color: #f8f9fa;
 }
 .dropdown-item {
-  color: rgba(52, 184, 192, 0.9);;
+  color:rgba(37, 124, 130, 0.9);
+  font-size: 15px;
 }
 
 .pagination {

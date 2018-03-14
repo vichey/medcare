@@ -11,16 +11,24 @@
                     <div class="carousel-item active">
                         <img src="{{asset('front/slides/'.$s->photo)}}" alt="{{$s->name}}" width="100%">
                         <div class="carousel-caption">
+                            <p></p>
                             <aside><b>{{$s->name}}</b></aside>
-                            <aside><a href="{{$s->url}}"><button class="btn btn-primary btn-c"><b>READ MORE</b></button></a></aside>
+                            <p>
+                                <aside><a href="{{$s->url}}"><button class="btn btn-primary btn-c"><b>READ MORE</b></button></a></aside>
+
+                            </p>
                         </div>  
                     </div>
                 @else
                     <div class="carousel-item">
                         <img src="{{asset('front/slides/'.$s->photo)}}"   alt="{{$s->name}}"  width="100%">
                         <div class="carousel-caption">
+                            <p></p>
                             <aside><b>{{$s->name}}</b></aside>
-                            <aside><a href="{{$s->url}}"><button class="btn btn-primary btn-c"><b>READ MORE</b></button></a></aside>
+                            <p>
+                                <aside><a href="{{$s->url}}"><button class="btn btn-primary btn-c"><b>READ MORE</b></button></a></aside>
+
+                            </p>
                         </div>                        
                     </div>
                 @endif
@@ -152,7 +160,7 @@
                 @foreach($audios as $aud)
                     <p class="audo-item">
                         <h6>{{$aud->title}}</h6>
-                        <audio controls="">
+                        <audio controls>
                             <source src="{{asset('front/audios/'.$aud->file)}}" type="audio/ogg">
                             <source src="{{asset('front/audios/'.$aud->file)}}" type="audio/mpeg">
                         </audio>
@@ -163,4 +171,31 @@
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="col-sm-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.2200895199717!2d104.91185231541081!3d11.536063691808772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310950e70d4955af%3A0x12ba488a5ccfa943!2sLy+Srey+Vyna+International+Medical+Services!5e0!3m2!1sen!2skh!4v1520968016510" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+        {{--  <div id="map" style="width:100%;height:750px">
+            <img src="{{asset('img/ajax-loader.gif')}}" alt="">
+        </div>  --}}
+    </div>
+</div>
+@endsection
+@section('js')
+<script>
+    function initMap() {
+        var myLatLng = {lat: 11.5360637, lng: 104.9118523};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+</script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF7yMA8-_MxooFoPfVvzuLGsN-Ppa4uR8&callback=initMap"></script>
 @endsection

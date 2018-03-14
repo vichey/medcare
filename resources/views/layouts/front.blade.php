@@ -95,10 +95,10 @@
     <footer>
          <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018 Lysreyvyna Clinic.</p>
-            <aside class="text-white text-center">Power by <a class="text-white" href="http://vdoo.biz/">Vdoo Solutions</a></aside>
         </div>
     </footer>
     <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    @yield('js')
 </body>
 </html>
