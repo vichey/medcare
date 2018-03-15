@@ -162,9 +162,6 @@ footer {
 .btn-s {
   padding: 25px;
 }
-.hr-s {
-  border-bottom: 1px solid #ffc107;
-}
 .pd-0 {
   padding: 0;
 }
@@ -184,7 +181,6 @@ footer {
   padding: 0;
   margin: 7px 0 0;
   font-size: 13px;
-
   border: none;
   border-radius: 0;
 }

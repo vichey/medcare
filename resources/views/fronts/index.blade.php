@@ -69,7 +69,7 @@
     <h3 align='center' class="text-warning">
         <b>All Service</b>  
     </h3>
-    <hr class="hr-s"> 
+    <hr> 
     <div class="row">
         <div class="col-md-4 text-center">
             <a class="btn btn-s btn-danger btn-block btn-flat" href="{{url('page/6')}}">
@@ -90,7 +90,7 @@
             </a>
         </div>
     </div>
-    <hr class="hr-s"> 
+    <hr> 
 
     <?php $staffs = DB::table('staffs')->orderBy('order', 'asc')->where('active', 1)->get(); ?>
     <p><br></p>
