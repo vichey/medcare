@@ -10,10 +10,18 @@ body {
 .default-color {
   color: #6f51c7;
 }
+.btn-flat {
+  border-radius: 0;
+}
 .icon {
   padding:18px 19px 21px 20px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.04);
+}
+.f {
+  background-image: url(../img/f.jpg);
+  background-size: 100%;
+  padding: 15px;
 }
 .card-header-c {
   padding: 5px;

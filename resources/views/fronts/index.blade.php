@@ -72,18 +72,21 @@
     <hr class="hr-s"> 
     <div class="row">
         <div class="col-md-4 text-center">
-            <a class="btn btn-s btn-danger btn-block" href="{{url('page/6')}}">
+            <a class="btn btn-s btn-danger btn-block btn-flat" href="{{url('page/6')}}">
+                <img src="{{asset('front/img/b.png')}}" alt="">
                 សេវាទូទៅ
             </a>
         </div>
         <div class="col-md-4 text-center">
-            <a class="btn btn-s btn-warning text-white btn-block" href="{{url('page/7')}}">
+            <a class="btn btn-s btn-warning text-white btn-block btn-flat" href="{{url('page/7')}}">
+                <img src="{{asset('front/img/c.png')}}" alt="">
                សេវាពិនិត្យជំងឺ
             </a>
         </div>
         <div class="col-md-4 text-center">
-            <a class="btn btn-s btn-success btn-block" href="{{url('page/8')}}">
-               សេវាពិនិត្យសុខភាព
+            <a class="btn btn-s btn-success btn-block btn-flat" href="{{url('page/8')}}">
+            <img src="{{asset('front/img/a.png')}}" alt=""> 
+            សេវាពិនិត្យសុខភាព
             </a>
         </div>
     </div>
@@ -128,11 +131,11 @@
     ?>
     <div class="row">
         <div class="col-md-12 my-4">
-            <h5 class="default-color">Latest Video  <a href="#" class="float-right">View All Video >></a></h5>
+            <h5 class="default-color">Latest Video  <a href="https://www.youtube.com/channel/UCuKpiFFMRySLxtreuMqcLdQ?disable_polymer=true" class="float-right">View All Video >></a></h5>
             <hr>
         </div>
     </div>
-    <div class="row">
+    <div class="row text-center">
         @foreach($video_trainings as $vid)
         <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="h-100">
@@ -171,14 +174,33 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-sm-12">
+<p></p>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="container-fluit f">
+<div class="container text-center">
+    <div style="width: 100%">
+    <div class="fb-page" data-href="" data-width="300"></div>
+    <div class="fb-page"
+    data-href="https://www.facebook.com/lsvclinic/" 
+    data-width="340"
+    data-hide-cover="false"
+    data-show-facepile="true"></div>
+    </div>
+</div>
+</div>
+    <div class="col-sm-12" style="padding:0px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.2200895199717!2d104.91185231541081!3d11.536063691808772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310950e70d4955af%3A0x12ba488a5ccfa943!2sLy+Srey+Vyna+International+Medical+Services!5e0!3m2!1sen!2skh!4v1520968016510" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
         {{--  <div id="map" style="width:100%;height:750px">
             <img src="{{asset('img/ajax-loader.gif')}}" alt="">
         </div>  --}}
     </div>
-</div>
 @endsection
 @section('js')
 <script>

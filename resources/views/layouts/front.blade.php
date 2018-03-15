@@ -92,7 +92,7 @@
         @yield('content')
     <br>
 
-    <footer>
+    <footer style="margin-top: -24px;">
          <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018 Lysreyvyna Clinic.</p>
         </div>
