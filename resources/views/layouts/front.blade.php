@@ -54,26 +54,26 @@
             <center>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('/')}}">Home</a>
+                    <a class="nav-link" href="{{url('/')}}">ទំព័រមុខ<br>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Facility</a>
+                    <a class="nav-link" href="#">ផ្សេងៗ<br>Facilities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('new-and-education')}}">News and Education</a>
+                    <a class="nav-link" href="{{url('new-and-education')}}">ព័ត៌មាន និងការអប់រំ<br>News & Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('page/staff')}}">Doctor Background</a>
+                    <a class="nav-link" href="{{url('page/staff')}}">ប្រវត្តិវិជ្ជបណ្ឌិត<br>Doctor Background</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('/page/about')}}">About Us</a>
+                    <a class="nav-link" href="{{url('/page/about')}}">អំពីពួកយើង<br>About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('/page/contact')}}">Contact Us</a>
+                    <a class="nav-link" href="{{url('/page/contact')}}">ទំនាក់ទំនងពួកយើង<br>Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        All Service
+                        សេវាកម្មទាំងអស់<br>All Services
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{url('/page/6')}}">សេវាទូទៅ</a>

@@ -203,7 +203,7 @@
     </div>
 @endsection
 @section('js')
-<script>
+{{--  <script>
     function initMap() {
         var myLatLng = {lat: 11.5360637, lng: 104.9118523};
 
@@ -219,5 +219,5 @@
         });
       }
 </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF7yMA8-_MxooFoPfVvzuLGsN-Ppa4uR8&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF7yMA8-_MxooFoPfVvzuLGsN-Ppa4uR8&callback=initMap"></script>  --}}
 @endsection
