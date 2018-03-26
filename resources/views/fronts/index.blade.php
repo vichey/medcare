@@ -185,13 +185,32 @@
 </script>
 <div class="container-fluit f">
 <div class="container text-center">
-    <div style="width: 100%">
+    <div class="row">
+        <div class="col-md-6">
+        <div style="width: 100%">
     <div class="fb-page" data-href="" data-width="300"></div>
     <div class="fb-page"
     data-href="https://www.facebook.com/lsvclinic/" 
     data-width="340"
     data-hide-cover="false"
     data-show-facepile="true"></div>
+  
+        </div>
+    </div>
+    <div class="col-md-6 text-left">
+        <div class="col-md-9 col-12">
+    <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email"><b>Email address:</b></label>
+      <input type="email" class="form-control" placeholder="Enter Your Email" id="email">
+    </div>
+    <div class="form-group">
+        <textarea name="description" id="description" placeholder="Want you want to say...!" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+    </div>
+    </div>
     </div>
 </div>
 </div>
