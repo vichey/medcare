@@ -76,9 +76,9 @@
                         សេវាកម្មទាំងអស់<br>All Services
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{url('/page/6')}}">សេវាទូទៅ</a>
-                        <a class="dropdown-item" href="{{url('/page/7')}}">សេវាពិនិត្យជំងឺ</a>
-                        <a class="dropdown-item" href="{{url('/page/8')}}">សេវាពិនិត្យសុខភាព</a>
+                        <a class="dropdown-item" href="{{url('/page/6')}}">សេវាទូទៅ / General Services</a>
+                        <a class="dropdown-item" href="{{url('/page/7')}}">សេវាពិនិត្យជំងឺ / Check Diseases</a>
+                        <a class="dropdown-item" href="{{url('/page/8')}}">សេវាពិនិត្យសុខភាព / Check Health</a>
                     </div>
                 </li>
             </ul>
