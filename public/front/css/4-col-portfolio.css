@@ -19,7 +19,7 @@ body {
   background: rgba(0, 0, 0, 0.04);
 }
 .f {
-  background-image: url(../img/f.jpg);
+  background: linear-gradient(to bottom, #6356e5 0%, #ffffff 100%);
   background-size: 100%;
   padding: 15px;
 }

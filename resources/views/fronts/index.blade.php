@@ -188,10 +188,10 @@
     <div class="row">
         <div class="col-md-6">
         <div style="width: 100%">
-    <div class="fb-page" data-href="" data-width="300"></div>
+    <div class="fb-page" data-href="" data-width="350"></div>
     <div class="fb-page"
     data-href="https://www.facebook.com/lsvclinic/" 
-    data-width="340"
+    data-width="350"
     data-hide-cover="false"
     data-show-facepile="true"></div>
   
@@ -200,12 +200,14 @@
     <div class="col-md-6 text-left">
         <div class="col-md-9 col-12">
     <form action="/action_page.php">
-    <div class="form-group">
-      <label for="email"><b>Email address:</b></label>
-      <input type="email" class="form-control" placeholder="Enter Your Email" id="email">
+    <div class="form-group text-white">
+      <label for="email"><b>Please write below and send us...</b></label>
+      <input style="margin-bottom: 3px;" type="text" class="form-control form-control-sm"  placeholder="Your Name" id="name">
+      <input style="margin-bottom: 3px;" type="email" class="form-control form-control-sm"   placeholder="Your Email" id="email">
+      <input type="text" class="form-control form-control-sm"  placeholder="Subject" id="subject">
     </div>
     <div class="form-group">
-        <textarea name="description" id="description" placeholder="Want you want to say...!" class="form-control"></textarea>
+        <textarea name="description" rows="5" id="description" placeholder="Write your message..." class="form-control"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Send</button>
   </form>
